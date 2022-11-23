@@ -324,7 +324,10 @@ img {
   padding-top: 94px;
   padding-bottom: 50px;
 }
-
+.clients-title {
+  margin-bottom: 50px;
+  text-align: center;
+}
 .clients-list {
   display: flex;
   flex-wrap: wrap;
@@ -340,6 +343,10 @@ img {
   background: #ffffff;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+}
+
+.clients-link :hover {
+  background-color: var(--primary-color);
 }
 
 /*----------FOOTER----------*/
