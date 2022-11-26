@@ -148,7 +148,7 @@ img {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('../images/header-1.jpg');
+    url('../images/img-hero-1.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -232,6 +232,16 @@ img {
   letter-spacing: 0.03em;
 
   color: #757575;
+}
+
+.group::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: ;
 }
 
 /*----------ABOUT----------*/
@@ -335,7 +345,7 @@ img {
 }
 
 .clients-link {
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 170px;
@@ -345,8 +355,17 @@ img {
   border-radius: 4px;
 }
 
-.clients-link :hover {
-  background-color: var(--primary-color);
+.clients-logo {
+  fill: #afb1b8;
+}
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--primary-color);
+}
+
+.clients-link:hover .clients-logo,
+.clients-link:focus .clients-logo {
+  fill: var(--primary-color);
 }
 
 /*----------FOOTER----------*/
