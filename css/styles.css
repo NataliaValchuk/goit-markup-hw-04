@@ -111,7 +111,8 @@ img {
   color: var(--secondary-color);
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--primary-color);
 }
 
@@ -370,7 +371,8 @@ img {
   fill: var(--grey-color);
 }
 
-.team .soc-link:hover {
+.team .soc-link:hover,
+.team .soc-link:focus {
   background-color: var(--primary-color);
 }
 
@@ -485,7 +487,8 @@ img {
   fill: var(--light-color);
 }
 
-.footer .soc-link:hover {
+.footer .soc-link:hover,
+.footer .soc-link:focus {
   background-color: var(--primary-color);
 }
 
@@ -501,6 +504,7 @@ img {
   justify-content: center;
   flex-wrap: wrap;
   gap: 8px;
+  margin-bottom: 50px;
 }
 
 .control-item {
@@ -521,14 +525,14 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
-
-  margin-bottom: 50px;
 }
 
 .tab-btn:hover,
 .tab-btn:focus {
   color: var(--light-color);
   background: var(--primary-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*-----------PROJECTS LIST-----------*/
@@ -541,8 +545,10 @@ img {
 
 /*-----------PROJECT-CARD-----------*/
 
-.project-card {
+.project-card:hover {
   background: var(--light-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-info {
