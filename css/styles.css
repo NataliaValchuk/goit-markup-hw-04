@@ -144,11 +144,13 @@ img {
   fill: #757575;
 }
 
-.contact-link:hover {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--primary-color);
 }
 
-.contact-link:hover .contact-icon {
+.contact-link:hover .contact-icon,
+.contact-link:focus .contact-icon {
   fill: var(--primary-color);
 }
 
@@ -377,6 +379,10 @@ img {
 }
 
 .team .soc-link:hover .soc-icon {
+  fill: var(--light-color);
+}
+
+.team .soc-link:focus .soc-icon {
   fill: var(--light-color);
 }
 
